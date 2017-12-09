@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="41dp"
+        android:layout_margin="10dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="3dp"
+        android:layout_height="250dp"
+        android:id="@+id/cardView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                app:srcCompat="@android:drawable/arrow_up_float"
+                android:id="@+id/imageView"
+                android:layout_height="170dp" />
+
+            <TextView
+                android:text="ItemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_below="@+id/imageView"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/ItemName"
+                android:textSize="18dp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/ItemName"
+                android:id="@+id/textView2" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
